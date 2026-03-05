@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <div id="card">
+        <h1>Contact Us</h1>
+
+        <form id="contactForm" href>
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" required>
+
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" required>
+
+            <label>Query Type *</label>
+            <div id="options">
+                <div class="option">
+                    <input type="radio" name="query" value="Frontend" required> Frontend
+                </div>
+                <div class="option">
+                    <input type="radio" name="query" value="Backend"> Backend
+                </div>
+            </div>
+
+            <label for="message">Message *</label>
+            <textarea id="message" maxlength="500" required></textarea>
+
+
+            <input type="checkbox" id="consent" required>
+            I consent to being contacted by the team *
+
+            <input type="submit" value="Submit"></input>
+        </form>
+    </div>
+
+    <div id="divSummary" hidden></div>
+    
+   <script src="js/script.js"></script>
+
+</body>
+</html>
+
