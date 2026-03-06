@@ -6,7 +6,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     const lname = document.getElementById("lname").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
-    const consent = document.getElementById("consent").checked;
 
     const query = document.querySelector('input[name="query"]:checked');
     
@@ -26,6 +25,9 @@ document.getElementById("contactForm").addEventListener("submit", function(event
                     <p>Email: </p>
                 </div>
                 <div class="campo">
+                    <p>Desarrollador: </p>
+                </div>
+                <div class="campo">
                     <p>Mensaje: </p>
                 </div>
             </div>
@@ -38,6 +40,9 @@ document.getElementById("contactForm").addEventListener("submit", function(event
                 </div>
                 <div class="valor">
                     <a href="${email}">${email}</a>
+                </div>
+                <div class="valor">
+                    <p>${query.value}</p>
                 </div>
                 <div class="valor">
                     <p>${message}</p>
